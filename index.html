@@ -10,12 +10,13 @@
 
   <style>
      :root {
-        --primary-color:#444;
+        --primary-color:rgb(253, 12, 12);
         --second-color: #3EC1D5;
         --white: #ffffff;
+        --black:rgba(0, 0, 0, 1);
         --dark: rgba(0, 0, 0, 0.80);
         --bgcolor: #f9f9f9;
-        --primary-font: '{{PrimaryFont}}';
+        --primary-font: 'Raleway', 'sans-serif';
         --second-font: '{{SecondaryFont}}';
     }
   </style>
@@ -7790,7 +7791,7 @@ Supports Thumbs: true
 }
 
 .nivo-caption::after {
-  background: var(--primary-color) none repeat scroll 0 0;
+  background:rgba(0, 0, 0,1) none repeat scroll 0 0;
   content: "";
   height: 100%;
   left: 0;
@@ -8256,7 +8257,7 @@ img {
 
 p {
   margin: 0 0 15px;
-  color: var(--primary-color);
+  color: var(--black);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -8440,7 +8441,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   left: 0;
   width: 100%;
   height: auto;
-  background: rgba(0, 0, 0, 0.40);
+  background: color-mix(in srgb, var(--primary-color) 40%, transparent);
   z-index: 9;
 }
 
@@ -8559,7 +8560,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 /*--------------------------------*/
 
 .header-area.stick {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: var(--primary-color);
   height: 70px;
   position: fixed;
   top: 0;
@@ -8660,7 +8661,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .single-well ul li {
-  color: var(--primary-color);
+  color: var(--black);
   display: block;
   padding: 5px 0;
 }
@@ -8672,7 +8673,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .single-well p {
-  color: var(--primary-color);
+  color: var(--black);
 }
 
 /*--------------------------------*/
@@ -8681,7 +8682,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 /*--------------------------------*/
 
 .services-icon {
-  color: var(--primary-color);
+  color: var(--black);
   display: inline-block;
   font-size: 36px;
   line-height: 36px;
@@ -8853,7 +8854,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 .tab-menu ul.nav li a {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border-radius: 0;
-  color: var(--primary-color);
+  color: var(--black);
   display: block;
   font-weight: 500;
   margin-right: 5px;
@@ -9262,9 +9263,9 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 
 .project-menu li a {
   background: var(--white) none repeat scroll 0 0;
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--black);
   border-radius: 20px;
-  color: var(--primary-color);
+  color: var(--black);
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
@@ -9450,8 +9451,8 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .pri_table_list button {
-  background: var(--primary-color) none repeat scroll 0 0;
-  border: 1px solid var(--primary-color);
+  background: var(--black) none repeat scroll 0 0;
+  border: 1px solid var(--black);
   color: var(--white);
   margin-bottom: 25px;
   padding: 10px 35px;
@@ -9652,7 +9653,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .blog-text h4 a {
-  color: var(--primary-color);
+  color: var(--black);
   text-decoration: none;
 }
 
@@ -9662,14 +9663,14 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .blog-btn {
-  border-bottom: 1px dotted var(--primary-color);
-  color: var(--primary-color);
+  border-bottom: 1px dotted var(--black);
+  color: var(--black);
   text-decoration: none;
 }
 
 .blog-btn {
-  border-bottom: 1px dotted var(--primary-color);
-  color: var(--primary-color);
+  border-bottom: 1px dotted var(--black);
+  color: var(--black);
   display: inline-block;
   padding: 0 1px 5px 0;
   position: relative;
@@ -9735,9 +9736,9 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .single-blog .ready-btn {
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--black);
   border-radius: 30px;
-  color: var(--primary-color);
+  color: var(--black);
   cursor: pointer;
   display: inline-block;
   font-size: 15px;
@@ -9821,7 +9822,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border: 1px solid #ccc;
   border-radius: 0;
-  color: var(--primary-color);
+  color: var(--black);
   height: 40px;
   margin-bottom: 16px;
   padding-left: 20px;
@@ -9832,7 +9833,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border: 1px solid #ccc;
   border-radius: 0;
-  color: var(--primary-color);
+  color: var(--black);
   height: 140px;
   padding: 20px;
   width: 100%;
@@ -9841,7 +9842,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 .contact-form button[type="submit"] {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border: 1px solid #ccc;
-  color: var(--primary-color);
+  color: var(--black);
   font-size: 16px;
   font-weight: 700;
   margin-top: 8px;
@@ -9893,7 +9894,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   font-size: 24px;
   width: 50px;
   height: 50px;
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--black);
   line-height: 46px;
   border-radius: 50%;
   margin-bottom: 20px;
@@ -9924,7 +9925,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .footer-head p {
-  color: var(--primary-color);
+  color: var(--black);
 }
 
 .footer-head h4 {
@@ -9957,8 +9958,8 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .footer-icons ul li a {
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
+  border: 1px solid var(--black);
+  color: var(--black);
   display: block;
   font-size: 16px;
   height: 40px;
@@ -10000,9 +10001,9 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .popular-tag ul li a {
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--black);
   border-radius: 30px;
-  color: var(--primary-color);
+  color: var(--black);
   display: block;
   font-size: 13px;
   font-weight: 600;
@@ -10027,12 +10028,12 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .copyright-text a {
-  color: var(--primary-color);
+  color: var(--black);
 }
 
 .copyright>p {
   margin-bottom: 0;
-  color: var(--primary-color);
+  color: var(--black);
 }
 
 .copyright a, .credits a {
@@ -10144,7 +10145,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 
 .left-blog h4 {
   border-bottom: 1px solid #ddd;
-  color: var(--primary-color);
+  color: var(--black);
   font-size: 17px;
   font-weight: 500;
   margin-bottom: 0;
@@ -10167,7 +10168,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 .left-blog ul li a:hover {}
 
 .left-blog ul li a {
-  color: var(--primary-color);
+  color: var(--black);
   display: block;
   font-size: 14px;
   padding: 10px;
@@ -10226,7 +10227,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .pst-content p a {
-  color: var(--primary-color);
+  color: var(--black);
   font-size: 15px;
 }
 
@@ -10283,7 +10284,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .post-information .entry-meta span a {
-  color: var(--primary-color);
+  color: var(--black);
   display: inline-block;
   padding: 10px 0;
 }
@@ -10302,11 +10303,11 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .entry-content>p {
-  color: var(--primary-color);
+  color: var(--black);
 }
 
 .entry-meta>span {
-  color: var(--primary-color);
+  color: var(--black);
 }
 
 .entry-content blockquote {
@@ -10347,8 +10348,8 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .sharing-icon a {
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
+  border: 1px solid var(--black);
+  color: var(--black);
   display: block;
   float: left;
   font-size: 18px;
@@ -10390,7 +10391,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 
 .comments-heading h3, h3.comment-reply-title {
   border-bottom: 1px solid #e8e8e9;
-  color: var(--primary-color);
+  color: var(--black);
   font-size: 18px;
   margin: 0 0 20px;
   padding: 0 0 5px;
@@ -10466,7 +10467,7 @@ span.email-notes {
 }
 
 .comment-respond p {
-  color: var(--primary-color);
+  color: var(--black);
   margin-bottom: 5px;
 }
 
@@ -10493,7 +10494,7 @@ span.email-notes {
   border: 1px solid var(--second-color);
   border-radius: 20px;
   box-shadow: none;
-  color: var(--primary-color);
+  color: var(--black);
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
@@ -10543,10 +10544,10 @@ span.email-notes {
   display: flex; flex-wrap: wrap;gap: 10px;
 }
 .quick ul li{
-  padding: 10px; border-radius: 20px; border: 1px solid var(--primary-color);
+  padding: 10px; border-radius: 20px; border: 1px solid var(--black);
 }
 .quick ul li a{
-  color: var(--primary-color);
+  color: var(--black);
 }
 .quick ul li:hover{
   border: 1px ;
@@ -10922,7 +10923,7 @@ span.email-notes {
     }
 
     .team-content p a {
-      color: var(--primary-color);
+      color: var(--black);
     }
 
     .flex-member {
@@ -11922,8 +11923,8 @@ span.email-notes {
     <div class="copy-right">
       <div class="container">
           <div class="translate" id="google_translate_element"></div>
-          <span class="copy-right-item">{{Copyright}}</span>
-          <span class="copy-right-item">Powered by <a href="https://socialsparsh.com/" rel="noreferrer"
+          <span class="copy-right-item" style="color: var(--black);">{{Copyright}}</span>
+          <span class="copy-right-item" style="color: var(--black);">Powered by <a href="https://socialsparsh.com/" rel="noreferrer"
                   target="_blank">Social Sparsh</a></span>
       </div>
   </div>

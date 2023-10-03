@@ -15,6 +15,7 @@
       --second-color: #3EC1D5;
       --white: #ffffff;
       --dark: rgba(0, 0, 0, 0.80);
+      --black: rgba(0, 0, 0, 1);
       --bgcolor: #f9f9f9;
       --primary-font: '{{PrimaryFont}}';
       --second-font: '{{SecondaryFont}}';
@@ -1677,7 +1678,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   left: 0;
   width: 100%;
   height: auto;
-  background: rgba(0, 0, 0, 0.40);
+  background: color-mix(in srgb, var(--primary-color) 40%, transparent);
   z-index: 9;
 }
 
@@ -1796,7 +1797,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 /*--------------------------------*/
 
 .header-area.stick {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: var(--primary-color);
   height: 70px;
   position: fixed;
   top: 0;
@@ -3161,7 +3162,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .footer-head p {
-  color: var(--primary-color);
+  color: var(--black);
 }
 
 .footer-head h4 {
@@ -3194,8 +3195,8 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .footer-icons ul li a {
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
+  border: 1px solid var(--black);
+  color: var(--black);
   display: block;
   font-size: 16px;
   height: 40px;
@@ -3237,9 +3238,9 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .popular-tag ul li a {
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--black);
   border-radius: 30px;
-  color: var(--primary-color);
+  color: var(--black);
   display: block;
   font-size: 13px;
   font-weight: 600;
@@ -3264,12 +3265,12 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .copyright-text a {
-  color: var(--primary-color);
+  color: var(--black);
 }
 
 .copyright>p {
   margin-bottom: 0;
-  color: var(--primary-color);
+  color: var(--black);
 }
 
 .copyright a, .credits a {
@@ -3381,7 +3382,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 
 .left-blog h4 {
   border-bottom: 1px solid #ddd;
-  color: var(--primary-color);
+  color: var(--black);
   font-size: 17px;
   font-weight: 500;
   margin-bottom: 0;
@@ -3404,7 +3405,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 .left-blog ul li a:hover {}
 
 .left-blog ul li a {
-  color: var(--primary-color);
+  color: var(--black);
   display: block;
   font-size: 14px;
   padding: 10px;
@@ -3463,7 +3464,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .pst-content p a {
-  color: var(--primary-color);
+  color: var(--black);
   font-size: 15px;
 }
 
@@ -3520,7 +3521,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .post-information .entry-meta span a {
-  color: var(--primary-color);
+  color: var(--black);
   display: inline-block;
   padding: 10px 0;
 }
@@ -3539,11 +3540,11 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .entry-content>p {
-  color: var(--primary-color);
+  color: var(--black);
 }
 
 .entry-meta>span {
-  color: var(--primary-color);
+  color: var(--black);
 }
 
 .entry-content blockquote {
@@ -3584,8 +3585,8 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 }
 
 .sharing-icon a {
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
+  border: 1px solid var(--black);
+  color: var(--black);
   display: block;
   float: left;
   font-size: 18px;
@@ -3627,7 +3628,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 
 .comments-heading h3, h3.comment-reply-title {
   border-bottom: 1px solid #e8e8e9;
-  color: var(--primary-color);
+  color: var(--black);
   font-size: 18px;
   margin: 0 0 20px;
   padding: 0 0 5px;
@@ -3703,7 +3704,7 @@ span.email-notes {
 }
 
 .comment-respond p {
-  color: var(--primary-color);
+  color: var(--black);
   margin-bottom: 5px;
 }
 
@@ -3730,7 +3731,7 @@ span.email-notes {
   border: 1px solid var(--second-color);
   border-radius: 20px;
   box-shadow: none;
-  color: var(--primary-color);
+  color: var(--black);
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
@@ -3780,10 +3781,10 @@ span.email-notes {
   display: flex; flex-wrap: wrap;gap: 10px;
 }
 .quick ul li{
-  padding: 10px; border-radius: 20px; border: 1px solid var(--primary-color);
+  padding: 10px; border-radius: 20px; border: 1px solid var(--black);
 }
 .quick ul li a{
-  color: var(--primary-color);
+  color: var(--black);
 }
 .quick ul li:hover{
   border: 1px ;
@@ -4300,7 +4301,7 @@ span.email-notes {
                 <h4>product 1</h4>
                 <p>
                   <div>
-                  <a href="products.html">View All</a>
+                  <a href="productdetails.html">View Details</a>
                 </div>
                 <span style="margin-left: 0px;">
                   <button onclick="showShare('popup1')" style="border: 1px;background-color: white;">
@@ -4372,7 +4373,7 @@ span.email-notes {
                 <h4>product 2</h4>
                 <p>
                   <div>
-                  <a href="products.html">View All</a>
+                  <a href="productdetails.html">View Details</a>
                 </div>
                 <span style="margin-left: 0px;">
                   <button onclick="showShare('popup2')" style="border: 1px;background-color: white;">
@@ -4444,7 +4445,7 @@ span.email-notes {
                 <h4>product 3</h4>
                 <p>
                   <div>
-                  <a href="products.html">View All</a>
+                  <a href="productdetails.html">View Details</a>
                 </div>
                 <span style="margin-left: 0px;">
                   <button onclick="showShare('popup3')" style="border: 1px;background-color: white;">
@@ -4516,7 +4517,7 @@ span.email-notes {
                 <h4>product 4</h4>
                 <p>
                   <div>
-                  <a href="products.html">View All</a>
+                  <a href="productdetails.html">View Details</a>
                 </div>
                 <span style="margin-left: 0px;">
                   <button onclick="showShare('popup4')" style="border: 1px;background-color: white;">
@@ -4588,7 +4589,7 @@ span.email-notes {
                 <h4>product 5</h4>
                 <p>
                   <div>
-                  <a href="products.html">View All</a>
+                  <a href="productdetails.html">View Details</a>
                 </div>
                 <span style="margin-left: 0px;">
                   <button onclick="showShare('popup5')" style="border: 1px;background-color: white;">
@@ -4660,7 +4661,7 @@ span.email-notes {
                 <h4>product 6</h4>
                 <p>
                   <div>
-                  <a href="products.html">View All</a>
+                  <a href="productdetails.html">View Details</a>
                 </div>
                 <span style="margin-left: 0px;">
                   <button onclick="showShare('popup6')" style="border: 1px;background-color: white;">
@@ -4732,7 +4733,7 @@ span.email-notes {
                 <h4>product 7</h4>
                 <p>
                   <div>
-                  <a href="products.html">View All</a>
+                  <a href="productdetails.html">View Details</a>
                 </div>
                 <span style="margin-left: 0px;">
                   <button onclick="showShare('popup7')" style="border: 1px;background-color: white;">
@@ -4804,7 +4805,7 @@ span.email-notes {
                 <h4>product 8</h4>
                 <p>
                   <div>
-                  <a href="products.html">View All</a>
+                  <a href="productdetails.html">View Details</a>
                 </div>
                 <span style="margin-left: 0px;">
                   <button onclick="showShare('popup8')" style="border: 1px;background-color: white;">
