@@ -16,8 +16,8 @@
         --black:rgba(0, 0, 0, 1);
         --dark: rgba(0, 0, 0, 0.80);
         --bgcolor: #f9f9f9;
-        --primary-font: 'Raleway', 'sans-serif';
-        --second-font: '{{SecondaryFont}}';
+        --primary-font: 'sans-serif';
+        --second-font:  'Raleway';
     }
   </style>
   <!-- Favicons -->
@@ -39,7 +39,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family:var(--primary-font);
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -139,7 +139,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family:var(--primary-font);
   font-size: 1em;
 }
 button,
@@ -295,7 +295,7 @@ th {
   }
 }
 @font-face {
-  font-family: 'Glyphicons Halflings';
+  font-family:var(--primary-font);
 
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
@@ -304,7 +304,7 @@ th {
   position: relative;
   top: 1px;
   display: inline-block;
-  font-family: 'Glyphicons Halflings';
+  font-family:var(--primary-font);
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -1116,7 +1116,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:var(--primary-font);
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -1126,7 +1126,7 @@ input,
 button,
 select,
 textarea {
-  font-family: inherit;
+  font-family:var(--primary-font);
   font-size: inherit;
   line-height: inherit;
 }
@@ -1217,7 +1217,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: inherit;
+  font-family:var(--primary-font);
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -1565,7 +1565,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family:var(--primary-font);
 }
 code {
   padding: 2px 4px;
@@ -6024,7 +6024,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:var(--primary-font);
   font-size: 12px;
   font-style: normal;
   font-weight: normal;
@@ -6143,7 +6143,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:var(--primary-font);
   font-size: 14px;
   font-style: normal;
   font-weight: normal;
@@ -6412,7 +6412,7 @@ button.close {
 .carousel-control .icon-next {
   width: 20px;
   height: 20px;
-  font-family: serif;
+  font-family:var(--primary-font);
   line-height: 1;
 }
 .carousel-control .icon-prev:before {
@@ -8039,7 +8039,7 @@ preview-1
 
 
 .preview-1 .nivo-caption {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family:var(--primary-font);
 }
 
 .preview-1 .nivo-caption a {
@@ -8261,7 +8261,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family:var(--primary-font);
   margin: 0 0 15px;
   color: var(--primary-color);
   font-weight: 500;
@@ -8314,7 +8314,7 @@ a:active, a:hover {
 body {
   background: var(--white) none repeat scroll 0 0;
   color: var(--primary-color);
-  font-family: 'Open Sans', sans-serif;
+  font-family:var(--primary-font);
   font-size: 14px;
   text-align: left;
   overflow-x: hidden;
@@ -8784,7 +8784,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 .faq-details a span.acc-icons::before {
   color: #333;
   content: "";
-  font-family: fontawesome;
+  font-family:var(--primary-font);
   font-size: 24px;
   height: 40px;
   left: -51px;
@@ -8801,7 +8801,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 
 .faq-details a.active span.acc-icons::before {
   content: "";
-  font-family: fontawesome;
+  font-family:var(--primary-font);
   font-size: 24px;
   height: 40px;
   left: -51px;
@@ -8856,7 +8856,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   font-weight: 500;
   margin-right: 5px;
   padding: 10px 20px;
-  font-family: raleway;
+  font-family:var(--primary-font);
   font-size: 18px;
 }
 
@@ -9429,7 +9429,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 
 .pri_table_list li.check.cross::after {
   content: "\f00d";
-  font-family: fontawesome;
+  font-family:var(--primary-font);
   font-size: 14px;
   position: absolute;
   right: 50px;
@@ -9439,7 +9439,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 
 .pri_table_list li.check::after {
   content: "\f00c";
-  font-family: fontawesome;
+  font-family:var(--primary-font);
   font-size: 14px;
   position: absolute;
   right: 50px;
@@ -9680,7 +9680,7 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
 
 .blog-btn::after {
   content: "\f178";
-  font-family: fontawesome;
+  font-family:var(--primary-font);
   position: absolute;
   right: -20px;
   top: 1px;
@@ -10995,117 +10995,15 @@ span.email-notes {
   .team-content div{
       margin-top: 13px;
     }
-  /* for responsive img service and products */
-    @media (min-width: 320px) {
-      .col-md-3 .single-team-member .hovereff .team-img a img{
-        height: 230.39px;
-        object-fit: cover;
-      }
-      .col-md-4 .single-blog .single-blog-img a img{
-        
-        height: 232px;
-        object-fit: cover;
-      }
-    }
-    @media (min-width: 375px) {
-      .col-md-3 .single-team-member .hovereff .team-img a img{
-        height: 274.39px;
-        
-        object-fit: cover;
-      }
-      .col-md-4 .single-blog .single-blog-img a img{
-        
-        height: 276px;
-        object-fit: cover;
-      }
-    }
-    @media (min-width: 425px) {
-      .col-md-3 .single-team-member .hovereff .team-img a img{
-        height: 314.39px;
-        object-fit: cover;
-      }
-      .col-md-4 .single-blog .single-blog-img a img{
-        
-        height: 316px;
-        object-fit: cover;
-      }
-    }
-    @media (min-width: 768px) {
-      .col-md-3 .single-team-member .hovereff .team-img a img{
-        height: 124.39px;
-        object-fit: cover;
-      }
-      .col-md-4 .single-blog .single-blog-img a img{
-        
-        height: 176px;
-        object-fit: cover;
-      }
-    }
-    @media (min-width: 1024px) {
-      .col-md-3 .single-team-member .hovereff .team-img a img{
-        height: 168.39px;
-        object-fit: cover;
-      }
-      .col-md-4 .single-blog .single-blog-img a img{
-        
-        height: 234.66px;
-        object-fit: cover;
-      }
-    }
-    @media (min-width: 1440px) {
-      .col-md-3 .single-team-member .hovereff .team-img a img{
-        height: 208.39px;
-        object-fit: cover;
-      }
-      .col-md-4 .single-blog .single-blog-img a img{
-       
-        height: 288px;
-        object-fit: cover;
-      }
-    }
   
-    @media (min-width: 320px) {
-      .col-md-6 .well-left .single-well a img{
-       
-        height: 145px;
-        object-fit: cover;
+  .productss{
+    display: flex;
+  }
+   .service {
+        display: flex;
       }
-    }
-    @media (min-width: 375px) {
-     .col-md-6 .well-left .single-well a img{
-      
-      height: 172.5px;
-        object-fit: cover;
-     }
-    }
-    @media (min-width: 425px) {
-     .col-md-6 .well-left .single-well a img{
-      
-      height: 197.5px;
-        object-fit: cover;
-     }
-    }
-    @media (min-width: 768px) {
-     .col-md-6 .well-left .single-well a img{
-      
-      height: 172.5px;
-        object-fit: cover;
-     }
-    }
-    @media (min-width: 1024px) {
-     .col-md-6 .well-left .single-well a img{
-      
-      height: 227.5px;
-        object-fit: cover;
-     }
-    }
-    @media (min-width: 1440px) {
-     .col-md-6 .well-left .single-well a img{
-      
-      height: 277.5px;
-        object-fit: cover;
-     }
-    }
+    
+  
     .navbar .navbar-header .navbar-brand img{
       background: rgba(249,246,246);
     }
@@ -11395,7 +11293,7 @@ span.email-notes {
       </div>
       <div class="row">
         <div class="flex-member">
-          <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="col-md-3 col-sm-3 col-xs-12 service">
             <div class="single-team-member">
               <div class="hovereff">
               <div class="team-img popup1">
@@ -11467,7 +11365,7 @@ span.email-notes {
             </div>
           </div>
           <!-- End column -->
-          <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="col-md-3 col-sm-3 col-xs-12 service">
             <div class="single-team-member">
               <div class="hovereff">
               <div class="team-img popup2">
@@ -11539,7 +11437,7 @@ span.email-notes {
             </div>
           </div>
           <!-- End column -->
-          <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="col-md-3 col-sm-3 col-xs-12 service">
             <div class="single-team-member">
               <div class="hovereff">
               <div class="team-img popup3">
@@ -11611,7 +11509,7 @@ span.email-notes {
             </div>
           </div>
           <!-- End column -->
-          <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="col-md-3 col-sm-3 col-xs-12 service">
             <div class="single-team-member">
               <div class="hovereff">
               <div class="team-img popup4">
@@ -11733,7 +11631,7 @@ span.email-notes {
         </div>
         <div class="row">
           <div class="flex-member">
-            <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="col-md-4 col-sm-4 col-xs-12 productss">
               <div class="single-blog">
                 <div class="single-blog-img">
                   <a href="updatedetails.html">
@@ -11778,7 +11676,7 @@ span.email-notes {
               </div>
             </div>
             <!-- Start single blog -->
-            <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="col-md-4 col-sm-4 col-xs-12 productss">
               <div class="single-blog">
                 <div class="single-blog-img">
                   <a href="updatedetails.html">
@@ -11823,7 +11721,7 @@ span.email-notes {
               </div>
             </div>
             <!-- Start single blog -->
-            <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="col-md-4 col-sm-4 col-xs-12 productss">
               <div class="single-blog">
                 <div class="single-blog-img">
                   <a href="updatedetails.html">
